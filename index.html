@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قص الخلفية</title>
+  <link rel="icon" type="image/x-icon" href="https://www4.0zz0.com/2023/02/22/13/434871907.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      قم بإزالة خلفية الصورة <span>تلقائيًا</span> <span>ومجاناً</span>
+    </h1>
+    <!-- Add Card -->
+    <div class="card" id="addCard">
+      <button>
+        <input type="file" name="" id="fileInput" />
+        تحميل الصورة
+      </button>
+      <p>اختر صورة لحذف الخلفية الموجودة بها</p>
+    </div>
+    <!-- Display Card -->
+    <div class="card" id="displayCard">
+      <div class="image-cont">
+        <img id="display-img" src="" alt="" />
+      </div>
+      <button id="startBtn">إزالة الخلفية</button>
+    </div>
+    <!-- Loading Card -->
+    <div class="card" id="loadingCard">
+      <div class="loader"></div>
+    </div>
+    <!-- Download Card -->
+    <div class="card" id="downloadCard">
+      <div class="image-cont">
+        <img class="image-after" src="" alt="" />
+      </div>
+      <div style="display: flex; gap: 10px">
+        <button id="uploadAnother">تحميل صورة آخرى</button>
+        <button style="padding: 5px 30px">
+          <a id="downloadHref" download="transparentImage"> تنزيل </a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <h6 class="copyright">© Belal Saeed, All Rights reserved-2023</h6>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
